@@ -45,6 +45,11 @@ header {
     right: 50px;
 }
 
+.date__time{
+    margin-top: 40px;
+    margin-left: 320px;
+}
+
 /* Ajustando o icone de notificação */
 .icone-notification {
     position: absolute;
