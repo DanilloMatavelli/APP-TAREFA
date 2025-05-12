@@ -1,0 +1,649 @@
+/* Reset para todos os elementos da página */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Definido o tamanho do body */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--black);
+    position: relative;
+}
+
+/* Definido tamanho do Header */
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: var(--gray);
+}
+
+/* Ajustando a foto de perfil */
+.perfil {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 9px;
+    left: 22px;
+}
+
+/* tamanho do header e suas configurações */
+.container-header {
+    position: absolute;
+    width: 1100px;
+    height: 70px;
+    border-radius: 30px;
+    background: var(--white);
+    top: 20px;
+    right: 50px;
+}
+
+/* Ajustando o icone de notificação */
+.icone-notification {
+    position: absolute;
+    width: 46.949px;
+    height: 57px;
+    top: 10px;
+    right: 111px;
+}
+
+/* Ajustando o icone de menu-toggle */
+.icone-menu-toggle {
+    position: absolute;
+    width: 69px;
+    height: 46px;
+    fill: var(--black);
+    top: 15px;
+    right: 22px;
+}
+
+/* Container aonde as tarefas irão ficar */
+.tarefas {
+    display: flex;
+    width: 720px;
+    height: 100vh;
+}
+
+/* Ajustando valores da seção superior */
+.secao-superior {
+    position: absolute;
+    width: 670px;
+    height: 70px;
+    top: 120px;
+    left: 42px;
+}
+
+/* Configurando o botão criar tarefa */
+.criar-tarefa-button {
+    width: 100px;
+    height: 80px;
+    top: 190px;
+    left: 50px;
+}
+
+/* Configurando o botão editar tarefa */
+.editar_tarefa-button {
+    cursor: pointer;
+    width: 100px;
+    height: 80px;
+    top: 190px;
+    left: 400px;
+}
+
+/* Configurando o botão deletar tarefa */
+.deletar_tarefa-button {
+    cursor: pointer;
+    width: 100px;
+    height: 80px;
+    top: 190px;
+    left: 274px;
+}
+
+/* Ajustar a data */
+.Coloque-a-data{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    color: var(--black);
+}
+
+.date{
+    position: relative;
+    left: 10px;
+    top: 30px;
+    background-color: var(--green);
+    border: none;
+    outline: none;
+    
+}
+
+/* Container da data */
+.dias-container {
+    cursor: pointer;
+    position: absolute;
+    width: 348px;
+    height: 80px;
+    border-radius: 25px;
+    background: var(--green);
+    top: 0px;
+    left: 320px;
+}
+
+/* Icone do calendário */
+.dias-container img {
+    position: absolute;
+    width: 48.582px;
+    height: 48px;
+    top: 18px;
+    left: 270px;
+}
+
+.calendario-icon{
+    opacity: 0;
+}
+
+/* Container aonde ficará as tarefas */
+.tarefas-container {
+    position: absolute;
+    width: 660px;
+    height: 230px;
+    border-radius: 25px;
+    background: var(--gray);
+    top: 210px;
+    left: 50px;
+
+}
+
+/* Texto dentro do container tarefas */
+.tarefas-container h1 {
+    position: absolute;
+    color: var(--white);
+    text-align: center;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: var(--black);
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    left: 30px;
+    top: 12px;
+}
+
+/* Caixa de opções */
+.box-options {
+    position: absolute;
+    width: 160px;
+    height: 29px;
+    border-radius: 20px;
+    border: 2px solid var(--white);
+    top: 12px;
+    left: 129px;
+
+}
+
+/* Icone para filtrar */
+.icone-opcoes {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    fill: var(--white);
+    top: 3px;
+    left: 128px;
+}
+
+/* Tarefa 01 */
+.tarefa-01 {
+    position: absolute;
+    width: 158px;
+    height: 145px;
+    border-radius: 10px;
+    background: var(--black);
+    top: 60px;
+    left: 34px;
+}
+
+.tarefa-01 h1 {
+    position: relative;
+    width: 212px;
+    height: 28px;
+    color: var(--white);
+    font-family: Jomhuria;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: -60px;
+    top: 10px;
+}
+
+.tarefa-01 p {
+    position: absolute;
+    width: 212px;
+    height: 28px;
+    color: var(--white);
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 62px;
+    left: 0px;
+}
+
+/* Tarefa 02 */
+.tarefa-02 {
+    position: absolute;
+    width: 158px;
+    height: 145px;
+    border-radius: 10px;
+    background: var(--black);
+    top: 62px;
+    left: 205px
+}
+
+/* Tarefa 03 */
+.tarefa-03 {
+    position: absolute;
+    width: 158px;
+    height: 145px;
+    border-radius: 10px;
+    background: var(--black);
+    top: 62px;
+    left: 376px;
+}
+
+/* Container da seção inferior */
+.secao-inferior {
+    position: absolute;
+    width: 670px;
+    height: 125px;
+    bottom: 20px;
+    left: 50px;
+    top: 450px;
+}
+
+/* Descrição da Tarefa */
+
+.descricao-container {
+    position: absolute;
+    width: 590px;
+    height: 125px;
+    border-radius: 25px;
+    background: var(--gray);
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: var(--black);
+
+}
+
+/* Botão concluido */
+.button-concluido {
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    left: 600px;
+}
+
+/* Botão cancelar */
+.button-cancelar {
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+    left: 600px;
+}
+
+/* Fundo do container anotações */
+.anotacoes {
+    position: absolute;
+    width: 470px;
+    height: 290px;
+    top: 130px;
+    right: 50px;
+    left: 780px;
+}
+
+/* Anotações */
+.anotacoes-container {
+    position: absolute;
+    width: 470px;
+    height: 290px;
+    border-radius: 25px;
+    background: var(--gray);
+}
+
+/* Fundo com cor anotações */
+.fundo-anotacoes {
+    position: absolute;
+    width: 324.348px;
+    height: 43px;
+    border-radius: 20px;
+    background: var(--black);
+    top: 22px;
+    left: 26px;
+}
+
+.fundo-anotacoes h1 {
+    position: absolute;
+    width: 146px;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--Display-Medium-Line-Height, 52px);
+    /* 216.667% */
+    left: 29px;
+}
+
+
+/* Para o usuario difitar suas anotações */
+.input-container {
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 170px;
+    background-color: var(--black);
+    top: 88px;
+    left: 80px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-pag-principal {
+    position: relative;
+    height: 0px;
+    top: -30px;
+}
+
+.footer-pag-principal p {
+    position: relative;
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    padding-left: 550px;
+    padding-top: 5px;
+}
+
+
+/* Página Adicionar Tarefa */
+
+.body-container {
+    position: relative;
+    width: 515.625px;
+    height: 100vh;
+    border-radius: 20px;
+    background: var(--gray-light);
+}
+
+/* Header da pagina Adicionar Tarefa */
+.header-add-tarefa {
+    width: 515.625px;
+    height: 40px;
+    border-radius: 20px 20px 0px 0px;
+    background: var(--gray);
+}
+
+/* Configurando o botão para fechar a página */
+header img {
+    position: absolute;
+    width: 17.578px;
+    height: 17.578px;
+    top: 18px;
+    right: 24px;
+
+}
+
+/* Gropo aonde ira ficar os campos para o usuario prencher sobre sua tarefa */
+.form-group {
+    position: absolute;
+    width: 412.355px;
+    height: 500px;
+    right: 52px;
+    bottom: 40px;
+    top: 40px;
+}
+
+/* Para colocar o titulo da tarefa */
+.titulo-input {
+    width: 412.354px;
+    height: 103.242px;
+}
+
+.titulo-input h1 {
+    position: absolute;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: 182px;
+}
+
+/* Colocar o nome da tarefa */
+.input-nome-da-tarefa {
+    position: absolute;
+    width: 412.354px;
+    height: 73.242px;
+    border-radius: 50px;
+    background: var(--gray);
+    top: 30px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+/* Colocar a descrição da tarefa */
+.descricao-input {
+    position: relative;
+    width: 412.354px;
+    height: 150.85px;
+    top: 20px;
+}
+
+.descricao-input h1 {
+    position: absolute;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: 165px;
+}
+
+.input-descricao-da-tarefa {
+    position: absolute;
+    width: 412.354px;
+    height: 120.85px;
+    border-radius: 15px;
+    background: var(--gray);
+    top: 30px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Colocar o prazo da tarefa */
+.prazo-input-RF07 {
+    position: relative;
+    width: 412.354px;
+    height: 103.243px;
+    top: 40px;
+}
+
+.prazo-input-RF07 h1 {
+    position: absolute;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: 183px;
+}
+
+.input-prazo-da-tarefa {
+    position: absolute;
+    width: 412.354px;
+    height: 73.242px;
+    border-radius: 50px;
+    background: var(--gray);
+    top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    outline: none;
+}
+
+.date-criacao-tarefa{
+    position: relative;
+    top: 50px;
+    z-index: 2;
+    background-color: var(--gray);
+    border: none;
+    outline: none;
+    left: 50px;
+}
+
+/* Imagem do lado do calendario */
+.prazo-input-RF07 img {
+    position: absolute;
+    width: 35.156px;
+    height: 35.156px;
+    top: 45px;
+    right: 40px;
+    color: var(--gray);
+    border: none;
+    outline: none;
+}
+
+/* Para o usuario selecionar a prioridade da tarefa */
+.prioridade-input-RF06 {
+    position: relative;
+    width: 412.354px;
+    height: 90px;
+    top: 53px;
+}
+
+.prioridade-input-RF06 h1 {
+    position: relative;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: 163px;
+}
+
+/* Parei aqui */
+
+.prioridade-tarefa {
+    position: relative;
+    width: 412.354px;
+    height: 60px;
+    border-radius: 50px;
+    background: var(--gray);
+    top: 10px;
+}
+
+.opcoes {
+    position: absolute;
+    width: 136.963px;
+    height: 60px;
+    border-right: 5px solid var(--black);
+    border-left: 5px solid var(--black);
+    background: var(--gray);
+    left: 138px;
+    top: 29px;
+}
+
+.opcoes-prioridade {
+    display: flex;
+    position: relative;
+    width: 306px;
+    height: 20px;
+    left: 50px;
+    top: 20px;
+    gap: 88px;
+    z-index: 2;
+}
+
+.opcoes-prioridade p {
+    cursor: pointer;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Botão confirmar depois de prencher todos os campos da tarefa */
+.button-confirmar {
+    position: relative;
+    width: 515.625px;
+    height: 60px;
+    border-radius: 0px 0px 20px 20px;
+    background: var(--green);
+    left: 0px;
+    top: 550px;
+}
+
+.button-confirmar h1 {
+    cursor: pointer;
+    position: relative;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 23px;
+    left: 210px;
+}
+
+.footer-container {
+    position: relative;
+    height: 30px;
+    background-color: var(--black);
+    top: 0px;
+}
+
+.footer-container p {
+    position: relative;
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    padding-left: 550px;
+    padding-top: 5px;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP DE TAREFAS</title>
+
+    <!-- Link Para o CSS de cores -->
+    <link rel="stylesheet" href="./assets/styles/cores.css">
+
+    <!-- Link Para o Global CSS -->
+    <link rel="stylesheet" href="./assets/styles/global.css">
+
+    <!-- Conexão para o google fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link Google Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img class="perfil" src="./assets/icons/Header/perfil.svg" alt="foto-perfil">
+        </figure>
+
+        <div class="container-header">
+            <figure>
+                <img class="icone-notification" src="./assets/icons/Header/icone-notificação.svg"
+                    alt="icone-notificação">
+            </figure>
+
+            <figure>
+                <img class="icone-menu-toggle" src="./assets/icons/Header/icone menu toggle.svg"
+                    alt="icone-menu-toggle">
+            </figure>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="tarefas">
+
+            <div class="secao-superior">
+
+                <section class="tarefas-button">
+                    <a href="./criacao-tarefas.html"><img class="criar-tarefa-button"
+                            src="./assets/icons/secao-superior/criar_tarefa-button RF01.svg"
+                            alt="button-criar-tarefas"></a>
+
+                    <img class="editar_tarefa-button" src="./assets/icons/secao-superior/editar_tarefa-button RF02.svg"
+                        alt="button-editar-tarefas">
+
+                    <img class="deletar_tarefa-button"
+                        src="./assets/icons/secao-superior/deletar_tarefa-button RF03.svg" alt="button-deletar-tarefas">
+                </section>
+
+                <section class="data-input">
+
+                    <div class="dias-container">
+
+                        <form>
+                            <label class="Coloque-a-data" for="data">Coloque a Data Aqui:</label>
+                            <input class="date" type="date" name="data">
+                        </form>
+                        <img src="./assets/icons/secao-superior/calendario-icon.svg" alt="calendario-icon"
+                            id="calendar-icon">
+
+                    </div>
+                </section>
+            </div>
+
+            <section class="secao-central">
+                <div class="tarefas-container">
+                    <section class="filtro">
+                        <h1>Filtrar</h1>
+                        <div class="box-options">
+                            <img class="icone-opcoes" src="./assets/icons/secao-central/opcoes.svg" alt="opcoes">
+                        </div>
+                    </section>
+
+                    <section class="visualizar-tarefas-RF04">
+                        <div class="tarefa-01">
+                            <h1>Título</h1>
+                            <p>officiis enim ut obcaecati reprehenderit</p>
+                        </div>
+
+                        <div class="tarefa-02"></div>
+
+                        <div class="tarefa-03"></div>
+                    </section>
+
+                </div>
+            </section>
+
+            <div class="secao-inferior">
+                <input class="descricao-container" type="text" placeholder="Digite sua tarefa aqui...">
+                <figure>
+                    <img class="button-concluido" src="./assets/icons/secao-inferior/concluido-button RF05.svg"
+                        alt="button-concluido">
+
+                    <img class="button-cancelar" src="./assets/icons/secao-inferior/cancelar-button.svg"
+                        alt="button-cancelar">
+                </figure>
+            </div>
+
+        </section>
+
+        <section class="anotacoes">
+            <div class="anotacoes-container">
+                <div class="fundo-anotacoes">
+                    <h1>Anotações</h1>
+                </div>
+
+                <input class="input-container" type="text" placeholder="Escreva suas anotações aqui...">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-pag-principal">
+            <p>Desenvolvido Por Danillo Rodrigues Matavelli</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

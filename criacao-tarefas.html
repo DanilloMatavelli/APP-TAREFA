@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Criação De Tarefas</title>
+
+    <!-- Link Para o CSS de cores -->
+    <link rel="stylesheet" href="./assets/styles/cores.css">
+
+    <!-- Link Para o Global CSS -->
+    <link rel="stylesheet" href="./assets/styles/global.css">
+
+    <!-- Conexão para o google fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link Google Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="body-container">
+        <header class="header-add-tarefa">
+            <a href="./index.html"><img src="./assets/icons/Header-pag-add-tarefa/close-button.svg"
+                    alt="close-button"></a>
+        </header>
+
+        <main>
+            <div class="form-group">
+                <div class="titulo-input">
+                    <h1>Título</h1>
+                    <input class="input-nome-da-tarefa" type="text" placeholder="Nome da tarefa">
+                </div>
+
+                <div class="descricao-input">
+                    <h1>Descrição</h1>
+                    <input class="input-descricao-da-tarefa" type="text" placeholder="Descreva a tarefa...">
+                </div>
+
+                <div class="prazo-input-RF07">
+                    <h1>Prazo</h1>
+                    <form>
+                        <input class="date-criacao-tarefa" type="date" name="data">
+                    </form>
+                    <input class="input-prazo-da-tarefa" type="text" placeholder="**/**/**">
+                    <img src="./assets/icons/secao-superior/calendario-icon.svg" alt="calendario-icon">
+                </div>
+
+                <div class="prioridade-input-RF06">
+                    <h1>Prioridade</h1>
+                    <div class="prioridade-tarefa">
+                        <div class="opcoes-prioridade">
+                            <p>Baixa</p>
+                            <p>Média</p>
+                            <p>Alta</p>
+                        </div>
+                    </div>
+                    <div class="opcoes"></div>
+                </div>
+            </div>
+
+            <!-- Botão confirmar depois que todos os campos para adicionar uma tarefa estejam preenchidos -->
+            <div class="button-confirmar">
+                <h1>CONFIRMAR</h1>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>Desenvolvido Por Danillo Rodrigues Matavelli</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
